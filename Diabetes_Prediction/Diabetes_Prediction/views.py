@@ -35,8 +35,8 @@ def result(request):
 
     result1 = ""
     if pred==[1]:
-        result1 = "Positive"
+        result1 = "Positive! You are Diabetic"
     else:
-        result1 = "Negative"
+        result1 = "Negative!! You are not Diabetic"
 
-    return render(request,'predict.html',{"result2":result1})
+    return render(request,'predict.html',{"result2": result1})
