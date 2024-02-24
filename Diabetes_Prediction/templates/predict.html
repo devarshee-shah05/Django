@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction page</title>
+    <style>
+        body{
+            background-image: url("{% static 'C:/Users/shahd/Desktop/Django-project/Django/Diabetes_Prediction/static/images/image2.jpg'}");
+        }
+    </style>
+</head>
+<body>
+    <p> WELCOME TO THE PREDICTION PAGE! </p>
+    <div> align = 'center' class="main"
+        <h1> Please enter the following information: </h1>
+        <form action="result">
+            <table>
+                <tr>
+                    <td align="right"> Pregnancies: </td>
+                    <td align="left"> <input type="text" name="n1"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
